@@ -22,8 +22,8 @@ if (typeof some === 'string') {
     str = some;
 }
 ;
-let person;
-person = ['Max', 21];
+let persona;
+persona = ['Max', 21];
 var Status;
 (function (Status) {
     Status[Status["LOADING"] = 0] = "LOADING";

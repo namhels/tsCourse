@@ -31,8 +31,8 @@ if (typeof some === 'string') {
 
 // Сделайте неизменяемый массив со строго описанными типами. Массив для примера
 
-let person: [string, number];
-person = ['Max', 21];
+let persona: [string, number];
+persona = ['Max', 21];
 
 // Опишите enum условие следующее, он должен отображать статус загрузки. Загружается (LOADING) и загружена (READY)
 
