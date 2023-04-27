@@ -1,4 +1,46 @@
 "use strict";
+class Typescript {
+    constructor(version) {
+        this.version = version;
+    }
+    info(name) {
+        return `[${name}]: Typescript version is ${this.version}`;
+    }
+}
+class Car {
+    constructor(model) {
+        this.model = model;
+        this.numberOfWheels = 4;
+    }
+}
+class Animal {
+    constructor() {
+        this.voice = '';
+        this.color = 'black';
+        this.go();
+    }
+    go() {
+        console.log('Go');
+    }
+}
+class Cat extends Animal {
+    setVoice(voice) {
+        this.voice = voice;
+    }
+}
+const cat = new Cat();
+cat.setVoice('test');
+console.log(cat.color);
+class ComponentGeneral {
+}
+class AppComponent extends ComponentGeneral {
+    render() {
+        console.log('Component on render');
+    }
+    info() {
+        return 'This is info';
+    }
+}
 function strip(x) {
     if (typeof x === 'number') {
         return x.toFixed(2);
