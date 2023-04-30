@@ -1,4 +1,39 @@
 "use strict";
+var Membership;
+(function (Membership) {
+    Membership[Membership["Simple"] = 0] = "Simple";
+    Membership[Membership["Standard"] = 1] = "Standard";
+    Membership[Membership["Premium"] = 2] = "Premium";
+})(Membership || (Membership = {}));
+const membership = Membership.Standard;
+const membershipReverse = Membership[2];
+console.log(membership);
+console.log(membershipReverse);
+var SocialMedia;
+(function (SocialMedia) {
+    SocialMedia["VK"] = "VK";
+    SocialMedia["FACEBOOK"] = "FACEBOOK";
+    SocialMedia["INSTAGRAM"] = "INSTAGRAM";
+})(SocialMedia || (SocialMedia = {}));
+const social = SocialMedia.INSTAGRAM;
+console.log(social);
+function addV(a, b) {
+    return a + b;
+}
+function toUpperCase(str) {
+    return str.trim().toUpperCase();
+}
+function position(a, b) {
+    if (!a && !b) {
+        return { x: undefined, y: undefined };
+    }
+    if (a && !b) {
+        return { x: a, y: undefined, default: a.toString() };
+    }
+    return { x: a, y: b };
+}
+console.log('Empty: ', position());
+console.log('Two params: ', position(10, 15));
 class Typescript {
     constructor(version) {
         this.version = version;
